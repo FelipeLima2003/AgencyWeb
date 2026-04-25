@@ -113,7 +113,7 @@ main{
 
 /* -------- SERVICES --------*/
 .section-services{
-    display: grid;
+    display: grid; /* transforma o elemento em tabela com colunas */
     grid-template-columns: repeat(4,max-content);
     gap: 25px;
     justify-content: center;
@@ -129,8 +129,9 @@ main{
 
 .container-item-services h2{
     font-family: var(--font-family-primary);
-    font-weight: var(--font-weight-4);
+    font-weight: var(--font-weight-h4);
     font-size: var(--font-size-h4);
+    color: var(--color-black);
 
 }
 
@@ -138,4 +139,86 @@ main{
     font-family: var(--font-family-primary);
     color: var(--color-gray-2);
     font-size: var(--font-size-caption);
+}
+
+/* -------- DETAILS --------*/
+
+.section-details{
+    display: flex; /* Habilitar o gap */
+    flex-direction: column; /* Colocar os elementos em coluna */
+    gap: 80px; /* Distancia entre elementos*/
+    align-items: center; /* Cuida da Horizontal (flex-direction: Column) */
+    padding: 80px 0; /* Espaçamento interno */
+}
+
+.details-presentation{
+    display: flex; /* Habilitar o gap */
+    flex-direction: column; /* Colocar os elementos em coluna */
+    gap: 30px; /* Distancia entre elementos*/
+    text-align: center;  /* Colocar o texto no centro */
+}
+
+.details-presentation h2{
+    font-size: var(--font-size-h2); /* Tamanho da fonte */
+    font-family: var(--font-family-primary); /* Familia da fonte */
+    font-weight: var(--font-weight-h3); /* Espessura da fonte */
+}
+
+.details-presentation p{
+    font-family: var(--font-family-primary); /* Familia da fonte */
+    font-size: var(--font-size-body); /* Tamanho da fonte */
+    color: var(--color-gray-2); /* Cor de texto */
+    width: 665px; /* Largura*/
+    margin: 0 auto;
+}
+
+.service-description{
+    display: flex; /* Colocar um ao lado do outro */
+    align-items: center; /* Colocar na vertifcal */
+    gap: 60px; /* Distancia entre elementos */
+}
+
+.content-service{
+    display: flex; /* Habilitar o gap */
+    flex-direction: column; /* Colocar em coluna */
+    gap: 40px; /* Distancia entre os elementos */
+}
+
+.service-details{
+    display: flex; /* Colocar um ao lado do outro */
+    align-items: center;  /* Centralizar na vertical */
+    gap: 25px;  /* Espaçamento entre os elemtnos */
+}
+
+.service-details div span{
+    font-family: var(--font-family-primary);  /* Tamanho da fonte */
+    font-size: var(--font-size-h4);  /* Espessura da fonte */
+    color: var(--color-black);  /* Cor da fonte */
+    font-weight: var(--font-weight-h4);  /* peso da fonte*/
+}
+
+.service-details div p{
+    font-family: var(--font-family-primary); /* Tamanho da fonte */
+    color: var(--color-gray-2); /* Cor da fonte */
+    font-size: var(--font-size-caption); /*  Espessura da fonte */
+}
+
+.content-service h3{
+    font-size: var(--font-size-h3);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-h3);
+    width: 420px;
+}
+
+.content-service h3 span {
+    color: var(--color-blue);
+}
+
+.content-service p {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    color:  var(--color-gray);
+    line-height: 27px;
+    width: 445px;
 }
