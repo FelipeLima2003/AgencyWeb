@@ -317,7 +317,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 80px;
-    align-self: center;
+    align-items:  center;
     background-color: var(--color-blue-10);
     padding: 140px;
 }
@@ -347,5 +347,71 @@ main{
     background-color: var(--color-black);
     padding: 20px 40px;
     border-radius: var(--color-white);
+    font-family: var(--font-family-primary);
     text-transform: uppercase;     /* Transforma toda  a escrita em maisculo */
+    color: var(--color-white);
+    font-weight: var(--font-weight-button);
 }
+
+/* ---------------- Foooter ----------------- */
+
+footer{
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.footer-informations{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;    /* Alinhar o logo a esquerda - impedindo ela de ocupar todo o centro */
+    font-family: var(--font-family-primary);
+}
+
+.footer-informations p{
+    font-size: var(--font-size-caption);
+    width: 268px;
+    color: #515151;
+}
+
+.footer-informations ul{
+    list-style: none;
+}
+
+/* Aplicando essas configurações para demais classes */
+.footer-informations ul li a, .footer-informations ul li{
+    text-decoration: none;
+    color: #515151;
+}
+
+.footer-informations h2{
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-h4);
+}
+
+.footer-socials{
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.social-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 30px;
+    box-shadow: 0 4px 14px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.3s; /* Gerar um delay */
+    cursor: pointer;
+}
+
+.social-item:hover{
+    background-color: var(--color-blue-10);
+    transform: translateY(-10px);
+}
+
+
+
