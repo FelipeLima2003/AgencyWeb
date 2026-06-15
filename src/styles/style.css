@@ -1,133 +1,191 @@
 @import url("./global.css");
 
-header{
-    display: flex; /* Para que o grupo fique ao lado do outro */
-    justify-content: space-between; /* Colocar nas extremidades */
-    align-items: center; /* Centralizar na vertical */
-    padding: 30px; /* Espaçamento interno */
-    border-bottom: 0.7px solid var(--color-gray-3); /* Borda inferior */
+header {
+    display: flex;
+    /* Para que o grupo fique ao lado do outro */
+    justify-content: space-between;
+    /* Colocar nas extremidades */
+    align-items: center;
+    /* Centralizar na vertical */
+    padding: 30px;
+    /* Espaçamento interno */
+    border-bottom: 0.7px solid var(--color-gray-3);
+    /* Borda inferior */
 }
 
-.container-nav-header{
-    display: flex; /* Para que o grupo fique ao lado do outro */
-    align-items: center; /* Centralizar na vertical */
-    gap: 70px; /* Distância entre os elementos  */
+.container-nav-header {
+    display: flex;
+    /* Para que o grupo fique ao lado do outro */
+    align-items: center;
+    /* Centralizar na vertical */
+    gap: 70px;
+    /* Distância entre os elementos  */
 }
 
-.navigation-header ul{ /* Só vai estilizar as tags <UL> que estiverem dentro da navigation-header*/
-    display: flex; /* Para que um grupo fique ao lado do outro */
-    gap: 40px; /* Distância entre os elementos  */
-    list-style: none; /* Remove a bolinha  */
+.navigation-header ul {
+    /* Só vai estilizar as tags <UL> que estiverem dentro da navigation-header*/
+    display: flex;
+    /* Para que um grupo fique ao lado do outro */
+    gap: 40px;
+    /* Distância entre os elementos  */
+    list-style: none;
+    /* Remove a bolinha  */
 }
 
 .navigation-header ul li a {
-    text-decoration: none; /* Decoração do texto */
-    color: var(--color-black);  /* Cor do texto */
-    font-family: var(--font-family-primary) /* Familia da fonte */;
+    text-decoration: none;
+    /* Decoração do texto */
+    color: var(--color-black);
+    /* Cor do texto */
+    font-family: var(--font-family-primary)
+        /* Familia da fonte */
+    ;
 }
 
 .navigation-header ul li .menu-active {
-    color: var(--color-blue); /* Cor do texto */
+    color: var(--color-blue);
+    /* Cor do texto */
 }
 
-.btn-header{
-    font-family: var(--font-family-primary); /* Altera a fonte */
-    text-decoration: none; /* Tira a decoração do texto */
-    background-color: var(--color-blue); /* Cor de background*/
-    color: var(--color-white); /* Cor de texto*/
-    border-radius: 10px ; /* Arrendodamento das bordas */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-weight: var(--font-weight-button);  /* Peso da fonte */
+.btn-header {
+    font-family: var(--font-family-primary);
+    /* Altera a fonte */
+    text-decoration: none;
+    /* Tira a decoração do texto */
+    background-color: var(--color-blue);
+    /* Cor de background*/
+    color: var(--color-white);
+    /* Cor de texto*/
+    border-radius: 10px;
+    /* Arrendodamento das bordas */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    font-weight: var(--font-weight-button);
+    /* Peso da fonte */
 }
 
 /*----------------- MAIN ----------------*/
-main{
-    display: flex; /* Para que o grupo fique ao lado do outro */
-    justify-content: center; /* Centralizar na horizontal */
-    align-items: center;  /* Centralizar na vertical */
-    gap: 50px; /* distancia entre os elementos */
-    background-color: var(--color-blue-10); /* Cor de fundo */
-    padding: 50px 0; /* Espaçamento interno */
+main {
+    display: flex;
+    /* Para que o grupo fique ao lado do outro */
+    justify-content: center;
+    /* Centralizar na horizontal */
+    align-items: center;
+    /* Centralizar na vertical */
+    gap: 50px;
+    /* distancia entre os elementos */
+    background-color: var(--color-blue-10);
+    /* Cor de fundo */
+    padding: 50px 0;
+    /* Espaçamento interno */
 }
 
-.main-content{
-    display: flex; /* Habilitar o gap */
-    flex-direction:column; /* Deixar em coluna */
-    gap: 30px; /* Espaçamento entre os elementos */
-    width: 520px; /* Largura do elemento*/
-    height: 380px; /* Espaçamento entre os elementos */
+.main-content {
+    display: flex;
+    /* Habilitar o gap */
+    flex-direction: column;
+    /* Deixar em coluna */
+    gap: 30px;
+    /* Espaçamento entre os elementos */
+    width: 520px;
+    /* Largura do elemento*/
+    height: 380px;
+    /* Espaçamento entre os elementos */
 }
 
-.main-content h1{
-    font-size: var(--font-size-h1); /* Tamanho da fonte*/
-    font-family: var(--font-family-primary);  /* Altera a fonte */
-    font-weight: var(--font-weight-h1); /* Espessura da fonte */
+.main-content h1 {
+    font-size: var(--font-size-h1);
+    /* Tamanho da fonte*/
+    font-family: var(--font-family-primary);
+    /* Altera a fonte */
+    font-weight: var(--font-weight-h1);
+    /* Espessura da fonte */
 }
 
 .main-content h1 span {
-    color: var(--color-blue); /* Altera a cor do texto */
+    color: var(--color-blue);
+    /* Altera a cor do texto */
 }
 
-.main-content p{
-    color: var(--color-gray); /* Altera a cor do texto */
-    font-family: var(--font-family-primary); /* Altera a fonte */
-    line-height: 30px; /* Distancia entre as linhas */
+.main-content p {
+    color: var(--color-gray);
+    /* Altera a cor do texto */
+    font-family: var(--font-family-primary);
+    /* Altera a fonte */
+    line-height: 30px;
+    /* Distancia entre as linhas */
 }
 
-.container-cta{
-    display: flex; /* Habilitar o gap */
-    gap: 10px; /* Distancia entre os elementos*/
+.container-cta {
+    display: flex;
+    /* Habilitar o gap */
+    gap: 10px;
+    /* Distancia entre os elementos*/
 }
 
-.btn-primary, .btn-secondary{
-    padding: 8px 55px; /* Espaçamento interno */
-    border-radius: 10px; /* Arrendondamento da borda*/
-    font-weight: var(--font-weight-button); /* Decoração do texto */
-    text-decoration: none;  /* Decoração do texto */
-    font-family:var(--font-family-primary) /* Familia da fonte */
+.btn-primary,
+.btn-secondary {
+    padding: 8px 55px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Arrendondamento da borda*/
+    font-weight: var(--font-weight-button);
+    /* Decoração do texto */
+    text-decoration: none;
+    /* Decoração do texto */
+    font-family: var(--font-family-primary)
+        /* Familia da fonte */
 
 }
 
 
-.btn-primary{
-    background-color: var(--color-blue); /* cor de fundo */
-    color: var(--color-white); /* cor de texto */
-    transition: 0.3s; /* Tempo de transição do elemento */
+.btn-primary {
+    background-color: var(--color-blue);
+    /* cor de fundo */
+    color: var(--color-white);
+    /* cor de texto */
+    transition: 0.3s;
+    /* Tempo de transição do elemento */
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #005e89;
 
 }
 
-.btn-secondary{
-     background-color: var(--color-white);  /* cor de fundo */
-     color: var(--color-blue); /* cor de texto */
-     border: 1px solid var(--color-blue); /* Borda do elemento */
-     transition: 0.3s; /* Tempo de transição do elemento */
+.btn-secondary {
+    background-color: var(--color-white);
+    /* cor de fundo */
+    color: var(--color-blue);
+    /* cor de texto */
+    border: 1px solid var(--color-blue);
+    /* Borda do elemento */
+    transition: 0.3s;
+    /* Tempo de transição do elemento */
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: #e6e6e6;
 }
 
 /* -------- SERVICES --------*/
-.section-services{
-    display: grid; /* transforma o elemento em tabela com colunas */
-    grid-template-columns: repeat(4,max-content);
+.section-services {
+    display: grid;
+    /* transforma o elemento em tabela com colunas */
+    grid-template-columns: repeat(4, max-content);
     gap: 25px;
     justify-content: center;
     padding: 30px 0;
     border-bottom: 0.7px solid var(--color-gray-3);
 }
 
-.container-item-services{
+.container-item-services {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.container-item-services h2{
+.container-item-services h2 {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-h4);
     font-size: var(--font-size-h4);
@@ -143,67 +201,103 @@ main{
 
 /* -------- DETAILS --------*/
 
-.section-details{
-    display: flex; /* Habilitar o gap */
-    flex-direction: column; /* Colocar os elementos em coluna */
-    gap: 80px; /* Distancia entre elementos*/
-    align-items: center; /* Cuida da Horizontal (flex-direction: Column) */
-    padding: 80px 0; /* Espaçamento interno */
+.section-details {
+    display: flex;
+    /* Habilitar o gap */
+    flex-direction: column;
+    /* Colocar os elementos em coluna */
+    gap: 80px;
+    /* Distancia entre elementos*/
+    align-items: center;
+    /* Cuida da Horizontal (flex-direction: Column) */
+    padding: 80px 0;
+    /* Espaçamento interno */
 }
 
-.details-presentation{
-    display: flex; /* Habilitar o gap */
-    flex-direction: column; /* Colocar os elementos em coluna */
-    gap: 30px; /* Distancia entre elementos*/
-    text-align: center;  /* Colocar o texto no centro */
+.details-presentation {
+    display: flex;
+    /* Habilitar o gap */
+    flex-direction: column;
+    /* Colocar os elementos em coluna */
+    gap: 30px;
+    /* Distancia entre elementos*/
+    text-align: center;
+    /* Colocar o texto no centro */
 }
 
-.details-presentation h2{
-    font-size: var(--font-size-h2); /* Tamanho da fonte */
-    font-family: var(--font-family-primary); /* Familia da fonte */
-    font-weight: var(--font-weight-h3); /* Espessura da fonte */
+.details-presentation h2 {
+    font-size: var(--font-size-h2);
+    /* Tamanho da fonte */
+    font-family: var(--font-family-primary);
+    /* Familia da fonte */
+    font-weight: var(--font-weight-h3);
+    /* Espessura da fonte */
 }
 
-.details-presentation p{
-    font-family: var(--font-family-primary); /* Familia da fonte */
-    font-size: var(--font-size-body); /* Tamanho da fonte */
-    color: var(--color-gray-2); /* Cor de texto */
-    width: 665px; /* Largura*/
+.details-presentation p {
+    font-family: var(--font-family-primary);
+    /* Familia da fonte */
+    font-size: var(--font-size-body);
+    /* Tamanho da fonte */
+    color: var(--color-gray-2);
+    /* Cor de texto */
+    width: 665px;
+    /* Largura*/
     margin: 0 auto;
 }
 
-.service-description{
-    display: flex; /* Colocar um ao lado do outro */
-    align-items: center; /* Colocar na vertifcal */
-    gap: 60px; /* Distancia entre elementos */
+.service-description {
+    display: flex;
+    /* Colocar um ao lado do outro */
+    align-items: center;
+    /* Colocar na vertifcal */
+    gap: 60px;
+    /* Distancia entre elementos */
 }
 
-.content-service{
-    display: flex; /* Habilitar o gap */
-    flex-direction: column; /* Colocar em coluna */
-    gap: 40px; /* Distancia entre os elementos */
+.service-description-reverse {
+    flex-direction: row-reverse;
 }
 
-.service-details{
-    display: flex; /* Colocar um ao lado do outro */
-    align-items: center;  /* Centralizar na vertical */
-    gap: 25px;  /* Espaçamento entre os elemtnos */
+.content-service {
+    display: flex;
+    /* Habilitar o gap */
+    flex-direction: column;
+    /* Colocar em coluna */
+    gap: 40px;
+    /* Distancia entre os elementos */
 }
 
-.service-details div span{
-    font-family: var(--font-family-primary);  /* Tamanho da fonte */
-    font-size: var(--font-size-h4);  /* Espessura da fonte */
-    color: var(--color-black);  /* Cor da fonte */
-    font-weight: var(--font-weight-h4);  /* peso da fonte*/
+.service-details {
+    display: flex;
+    /* Colocar um ao lado do outro */
+    align-items: center;
+    /* Centralizar na vertical */
+    gap: 25px;
+    /* Espaçamento entre os elemtnos */
 }
 
-.service-details div p{
-    font-family: var(--font-family-primary); /* Tamanho da fonte */
-    color: var(--color-gray-2); /* Cor da fonte */
-    font-size: var(--font-size-caption); /*  Espessura da fonte */
+.service-details div span {
+    font-family: var(--font-family-primary);
+    /* Tamanho da fonte */
+    font-size: var(--font-size-h4);
+    /* Espessura da fonte */
+    color: var(--color-black);
+    /* Cor da fonte */
+    font-weight: var(--font-weight-h4);
+    /* peso da fonte*/
 }
 
-.content-service h3{
+.service-details div p {
+    font-family: var(--font-family-primary);
+    /* Tamanho da fonte */
+    color: var(--color-gray-2);
+    /* Cor da fonte */
+    font-size: var(--font-size-caption);
+    /*  Espessura da fonte */
+}
+
+.content-service h3 {
     font-size: var(--font-size-h3);
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-h3);
@@ -218,19 +312,19 @@ main{
     font-family: var(--font-family-primary);
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-body);
-    color:  var(--color-gray);
+    color: var(--color-gray);
     line-height: 27px;
     width: 445px;
 }
 
 /* --------------- Section Benefit ---------------*/
-.section-benefit{
+.section-benefit {
     display: flex;
     gap: 20px;
     justify-content: center;
 }
 
-.card-benefit{
+.card-benefit {
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -242,25 +336,26 @@ main{
 .card-benefit p {
     width: 458px;
 }
+
 .card-benefit-secondary {
     background-color: #f4f4f4;
 }
 
-.card-benefit h2{
+.card-benefit h2 {
     font-family: var(--font-family-primary);
     font-size: var(--font-size-h3);
     width: 365px;
     text-align: center;
 }
 
-.card-benefit p{
+.card-benefit p {
     font-family: var(--font-family-primary);
     color: var(--color-gray);
     text-align: center;
     width: 458px;
 }
 
-.btn-benefit{
+.btn-benefit {
     padding: 10px 35px;
     border-radius: 10px;
     background-color: var(--color-blue);
@@ -270,7 +365,7 @@ main{
     font-weight: var(--font-weight-button);
 }
 
-.card-benefit-primary{
+.card-benefit-primary {
     background-color: var(--color-blue);
     color: var(--color-white);
 }
@@ -279,7 +374,7 @@ main{
     color: var(--color-white);
 }
 
-.btn-benefit-secondary{
+.btn-benefit-secondary {
     background-color: var(--color-white);
     padding: 10px 35px;
     border-radius: 10px;
@@ -291,7 +386,7 @@ main{
 
 /* ------------ Section Company ------------------ */
 
-.section-company{
+.section-company {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -300,29 +395,29 @@ main{
     padding: 80px;
 }
 
-.section-company h2{
+.section-company h2 {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-h2);
     font-size: var(--font-size-h3);
 }
 
-.container-company{
+.container-company {
     display: flex;
     gap: 80px;
 }
 
 /*----------- Section Contact ------------- */
 
-.section-contact{
+.section-contact {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    align-items:  center;
+    align-items: center;
     background-color: var(--color-blue-10);
     padding: 140px;
 }
 
-.section-contact h2{
+.section-contact h2 {
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-h2);
     font-family: var(--font-family-primary);
@@ -330,17 +425,18 @@ main{
     width: 478px;
 }
 
-.section-contact form{
+.section-contact form {
     display: flex;
     gap: 14px;
 }
 
-.section-contact form input{
+.section-contact form input {
     padding: 20px 35px;
     border-radius: 10px;
     width: 532px;
     font-family: var(--font-family-primary);
-    box-shadow: 0 4px 84px 0 rgba(0, 0, 0, 0.07);     /* Box-shadown: aplicar sombra*/
+    box-shadow: 0 4px 84px 0 rgba(0, 0, 0, 0.07);
+    /* Box-shadown: aplicar sombra*/
 }
 
 .section-contact form button {
@@ -348,70 +444,179 @@ main{
     padding: 20px 40px;
     border-radius: var(--color-white);
     font-family: var(--font-family-primary);
-    text-transform: uppercase;     /* Transforma toda  a escrita em maisculo */
+    text-transform: uppercase;
+    /* Transforma toda  a escrita em maisculo */
     color: var(--color-white);
     font-weight: var(--font-weight-button);
 }
 
 /* ---------------- Foooter ----------------- */
 
-footer{
+footer {
     display: flex;
     gap: 90px;
     justify-content: center;
     padding: 60px 0;
 }
 
-.footer-informations{
+.footer-informations {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: flex-start;    /* Alinhar o logo a esquerda - impedindo ela de ocupar todo o centro */
+    align-items: flex-start;
+    /* Alinhar o logo a esquerda - impedindo ela de ocupar todo o centro */
     font-family: var(--font-family-primary);
 }
 
-.footer-informations p{
+.footer-informations p {
     font-size: var(--font-size-caption);
     width: 268px;
     color: #515151;
 }
 
-.footer-informations ul{
+.footer-informations ul {
     list-style: none;
 }
 
 /* Aplicando essas configurações para demais classes */
-.footer-informations ul li a, .footer-informations ul li{
+.footer-informations ul li a,
+.footer-informations ul li {
     text-decoration: none;
     color: #515151;
 }
 
-.footer-informations h2{
+.footer-informations h2 {
     font-size: var(--font-size-h4);
     font-weight: var(--font-weight-h4);
 }
 
-.footer-socials{
+.footer-socials {
     display: flex;
     gap: 15px;
     align-items: flex-start;
 }
 
-.social-item{
+.social-item {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12px;
     border-radius: 30px;
     box-shadow: 0 4px 14px 0px rgba(0, 0, 0, 0.15);
-    transition: 0.3s; /* Gerar um delay */
+    transition: 0.3s;
+    /* Gerar um delay */
     cursor: pointer;
 }
 
-.social-item:hover{
+.social-item:hover {
     background-color: var(--color-blue-10);
     transform: translateY(-10px);
 }
 
 
 
+@media (max-width: 884px) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+    main img {
+        width: 400px;
+    }
+
+    .main-content h1 {
+        text-align: center;
+    }
+
+
+    .container-cta {
+        justify-content: center;
+    }
+
+    .section-services {
+        grid-template-columns: repeat(2, max-content);
+        gap: 50px 90px;
+    }
+
+    .details-presentation h2 {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    .details-presentation p {
+        width: 450px;
+    }
+
+    .service-description {
+        flex-direction: column;
+    }
+
+    .section-benefit {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-company {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+
+    }
+}
+
+@media (max-width:480px) {
+    .container-nav-header {
+        display: none;
+    }
+
+    main img {
+        width: 280px;
+    }
+
+    .main-content h1 {
+        font-size: var(--font-size-h3);
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .main-content p {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .section-services{
+        grid-template-columns: max-content;
+    }
+
+    .details-presentation h2{
+        width: 360px;
+        font-size: var(--font-size-h3);
+    }
+
+    .details-presentation p{
+        width: 360px;
+    }
+
+    .service-details{
+        width: 300px;
+    }
+
+   .card-benefit p{
+        width: 300px;
+   }
+
+   .section-contact form input{
+        width: 300px;
+   }
+
+   footer{
+    grid-template-columns: repeat(1,max-content);
+    gap: 15px;
+    justify-content: flex-start;
+    padding-left: 20px;
+   }
+}
